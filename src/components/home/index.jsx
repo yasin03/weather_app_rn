@@ -125,9 +125,10 @@ const Home = () => {
               </TouchableOpacity>
             </View>
           </View>
+         
           {/* Search Section Dropbox */}
           {showSearch ? (
-            <View className="absolute top-20 w-full rounded-3xl bg-gray-300 ">
+            <View className="absolute top-20 w-full rounded-3xl bg-gray-300 z-50">
               {locations.map((loc, index) => {
                 let showBorder = index + 1 != locations.length;
                 let borderClass = showBorder
